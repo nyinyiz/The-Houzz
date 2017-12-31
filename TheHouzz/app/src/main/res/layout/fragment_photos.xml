@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+      <HorizontalScrollView
+          android:id="@+id/horizontal_scroll"
+          android:layout_width="match_parent"
+          android:layout_height="72dp"
+          android:scrollbars="none"
+         >
+    <LinearLayout
+        android:id="@+id/ll_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_medium_2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@color/primaryTextColor"
+            android:padding="@dimen/margin_medium"
+            android:background="@drawable/bg_rounded_gray"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:drawableStart="@drawable/ic_tune"
+            android:drawablePadding="@dimen/margin_medium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@color/primaryTextColor"
+            android:padding="@dimen/margin_medium"
+            android:background="@drawable/bg_rounded_gray"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_down"
+            android:drawablePadding="@dimen/margin_medium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Style"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@color/primaryTextColor"
+            android:padding="@dimen/margin_medium"
+            android:background="@drawable/bg_rounded_gray"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_down"
+            android:drawablePadding="@dimen/margin_medium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metro Area"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@color/primaryTextColor"
+            android:padding="@dimen/margin_medium"
+            android:background="@drawable/bg_rounded_gray"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_down"
+            android:drawablePadding="@dimen/margin_medium"/>
+
+    </LinearLayout>
+    </HorizontalScrollView>
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_overlay"
+        android:layout_below="@id/horizontal_scroll"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_view"
+        android:paddingLeft="@dimen/margin_xsmall"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/margin_xsmall"/>
+
+
+</RelativeLayout>

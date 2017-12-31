@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TheHouzz</string>
+    <string name="houzz">houzz</string>
+    <string name="unlock_houzz">Unlock the \n Full Houzz Experience</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="already">Alerady have an account? SIGN IN</string>
+    <string name="home_long_text">By continuing you accept the Terms of Use and Privacyn Policy.</string>
+    <string name="search_houzz">Search Houzz</string>
+
+    <string name="home">HOME</string>
+    <string name="photos">PHOTOS</string>
+    <string name="shop">SHOP</string>
+    <string name="find_pros">FIND PROS</string>
+    <string name="stories">STORIES</string>
+    <string name="advice">ADVICE</string>
+    <string name="houzz_tv">HOUZZ TV</string>
+    <string name="_51_reviews">51 Reviews</string>
+    <string name="san_francisco_bay_area_cupertino_california">San Francisco Bay Area - Cupertino California,</string>
+    <string name="contact">CONTACT</string>
+    <string name="bill_fry_construction_wm_h_fry_const_co">Bill Fry Construction - Wm.H.Fry Const.Co</string>
+    <string name="call">CALL</string>
+
+
+</resources>

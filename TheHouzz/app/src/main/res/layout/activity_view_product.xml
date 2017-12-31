@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ViewProductActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_medium"
+                android:scaleType="centerCrop"
+                android:src="@drawable/facilities2" />
+
+            <LinearLayout
+                android:id="@+id/ll_product"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/iv_product"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/facilities2" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/facilities2" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/view_in_room" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_product"
+                android:layout_margin="@dimen/margin_medium_2"
+                android:text="Wooden Quarterfoil Square Mirror,\n 50 * 50cm"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_product_description"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:text="$69.99"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_big"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/ll_product_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/tv_product_price"
+                android:background="@color/gray">
+
+                <TextView
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_medium_2"
+                    android:background="@drawable/bg_round_green_border"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_add"
+                    android:focusable="true"
+                    android:foreground="@drawable/bg_ripple_green"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_medium"
+                    android:text="SAVE"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_regular_3x" />
+
+                <TextView
+                    android:id="@+id/btn_add_to_basket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_medium_2"
+                    android:layout_toEndOf="@id/btn_save"
+                    android:background="@drawable/bg_round_green"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_add"
+                    android:focusable="true"
+                    android:foreground="@drawable/bg_ripple_white"
+                    android:padding="@dimen/margin_medium"
+                    android:text="ADD TO BASKET"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular_3x" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

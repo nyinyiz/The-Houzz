@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="primaryLightColor">#168f71</color>
+    <color name="colorPrimaryDark">#074637</color>
+    <color name="colorAccent">#168f71</color>
+    <color name="secondaryLightColor">#f4fc66</color>
+    <color name="secondaryDarkColor">#8b9800</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#70000000</color>
+    <color name="black_overlay">#a7000000</color>
+    <color name="main_overlay">#a0000000</color>
+    <color name="gray">#dddddddd</color>
+    <color name="black_grey">#d7cfcfcf</color>
+    <color name="white">#ffffff</color>
+    <color name="recyclerview_bg">#03000000</color>
+
+    <color name="fruit_detail_virus">#f7b96e</color>
+
+    <color name="grey">#179e9e9e</color>
+    <color name="black_pro">#a0292929</color>
+
+    <color name="product_rounded">#962e2e2e</color>
+    <color name="text_blur_color">#9e9e9e</color>
+</resources>

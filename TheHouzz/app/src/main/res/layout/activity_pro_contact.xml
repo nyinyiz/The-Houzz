@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ShopCategoryDetailActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:titleTextColor="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_medium">
+                <ImageView
+                    android:id="@+id/action_back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/ic_close_black"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:padding="@dimen/margin_medium"
+                    android:text="Contact Pro"
+                    android:textSize="20sp"
+                    android:textColor="@color/primaryTextColor"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="SEND"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_view_head"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/grey"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_contact"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:src="@drawable/pro_human"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crisp Architects"
+                    android:textSize="@dimen/text_regular_3x"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_toRightOf="@id/iv_contact"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginLeft="@dimen/margin_medium_2"/>
+                <android.support.v7.widget.AppCompatRatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="5"
+                    style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                    android:layout_below="@id/tv_contact_name"
+                    android:layout_alignLeft="@id/tv_contact_name"/>
+                <TextView
+                    android:id="@+id/tv_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="73 Reviews"
+                    android:layout_toRightOf="@id/rating_bar"
+                    android:layout_below="@id/tv_contact_name"
+                    android:layout_marginLeft="@dimen/margin_medium"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/rl_view_head"
+                android:layout_margin="@dimen/margin_medium_2">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black_grey"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    >
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Your Email"
+                        android:maxLines="1"
+                        android:textColorHint="@color/black_grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </android.support.v7.widget.AppCompatEditText>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black_grey"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    >
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Your Phone Number"
+                        android:maxLines="1"
+                        android:textColorHint="@color/black_grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </android.support.v7.widget.AppCompatEditText>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black_grey"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    >
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Your Zip Code"
+                        android:maxLines="1"
+                        android:textColorHint="@color/black_grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </android.support.v7.widget.AppCompatEditText>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black_grey"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    >
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Your Message"
+                        android:maxLines="1"
+                        android:textColorHint="@color/black_grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </android.support.v7.widget.AppCompatEditText>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
